@@ -214,14 +214,14 @@
       }
     }
 
-    function test() {
+    function prompt() {
       if (confirm('Make a Custom Error?')) {
         throw new CustomError('Custom Error occurred!');
       }
     }
 
     try {
-      test();
+      prompt();
     } catch (err) {
       console.log(err.message);
     }
